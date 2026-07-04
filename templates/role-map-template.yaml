@@ -1,0 +1,19 @@
+status: Candidate / Role Map Template / No Runtime
+
+Role_Map:
+  role_name:
+  carrier:
+  purpose:
+  allowed:
+    - ""
+  blocked:
+    - ""
+  source:
+  authority:
+  gate:
+  return_path:
+  red_doors:
+    - "Output is not final authority"
+    - "Candidate is not approval"
+    - "Template is not runtime"
+  next_action:
