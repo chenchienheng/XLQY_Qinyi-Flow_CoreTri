@@ -1,0 +1,28 @@
+status: Candidate / Return Packet Pattern / No Runtime
+
+Return_Packet_Pattern:
+  gate:
+  scope:
+  source:
+  carrier:
+  authority:
+  evidence_boundary:
+    level:
+    source_ref:
+    verified_by_qinyi: false
+    human_reported: false
+  facts: []
+  inferences: []
+  pending: []
+  what_changed: []
+  what_did_not_change: []
+  risks: []
+  manual_needed: []
+  rebuild_triggers: []
+  next_action:
+
+Red_Doors:
+  - "Return Packet != Closeout"
+  - "Review != Approval"
+  - "Candidate Action != Approved Action"
+  - "Human Decision Required cannot be auto-resolved"
