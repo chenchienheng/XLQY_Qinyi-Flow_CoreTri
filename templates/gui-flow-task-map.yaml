@@ -1,0 +1,65 @@
+status: Candidate / GUI Flow Template / No Runtime
+
+GUI_Flow_Task_Map:
+  task_intake:
+    fields:
+      - task_name
+      - purpose
+      - participants
+      - date_or_time
+      - location_or_context
+      - must_have
+      - must_avoid
+      - final_decider
+  source_definition:
+    fields:
+      - core
+      - not_core
+      - failure_cost
+  carrier_selection:
+    fields:
+      - carrier_name
+      - carrier_role
+      - limitation
+      - authority_status
+  candidate_board:
+    fields:
+      - candidate
+      - pros
+      - risks
+      - gate_status
+      - evidence_needed
+  gate_validation:
+    fields:
+      - hard_gates
+      - soft_gates
+      - failed_gates
+  authority_check:
+    fields:
+      - final_authority
+      - confirmation_needed
+      - human_decision_required
+  decision_output:
+    fields:
+      - recommendation
+      - backup
+      - action_script
+      - manual_needed
+  return_packet:
+    fields:
+      - facts
+      - inferences
+      - pending
+      - what_changed
+      - what_did_not_change
+  rebuild_trigger:
+    fields:
+      - trigger
+      - fallback_path
+      - return_to
+
+Red_Doors:
+  - "GUI Flow != Runtime"
+  - "Candidate Board != Final Decision"
+  - "Tool Carrier != Authority"
+  - "Return Packet != Closeout"
