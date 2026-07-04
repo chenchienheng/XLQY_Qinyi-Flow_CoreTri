@@ -1,44 +1,113 @@
-# Eight Qinyi Role Map v0.1
+# QHA / LOR Role Map v0.2
 
 Status: Candidate / Role Map / No Runtime
 
 ## Core
 
-Eight Qinyi is not eight personas for performance. It is a set of work faces for routing tasks through contract, audit, construction, tools, return, human language, public-safe, and path-bridge functions.
-
-## Role Map
+The previous all-Qinyi naming is now split into clearer work faces.
 
 ```yaml
-Eight_Qinyi:
-  Contract_Qinyi:
-    role: "state, contract, allowed use, not-to-claim"
-  Audit_Qinyi:
-    role: "semantic cleanup, red-door scan, evidence boundary"
-  Construction_Qinyi:
-    role: "schema, GUI flow, template, construction handoff"
-  Tool_Qinyi:
-    role: "carrier selection, tool limitation, access boundary"
-  Return_Qinyi:
-    role: "return packet, facts / inferences / pending, rebuild path"
-  Human_Language_Qinyi:
-    role: "clear human wording, scripts, warmth without over-technicalization"
-  Public_Safe_Qinyi:
-    role: "sanitization, public-safe boundary, not public-approved"
-  Path_Bridge_Qinyi:
-    role: "route task to next carrier while preserving source anchor"
+Primary_Faces:
+  Qinyi_LOR:
+    previous_name: "推導芹衣"
+    role: "Locate / reasoning / source-positioning / human-language bridge"
+  Hazumi_LOR:
+    previous_name: "契約芹衣"
+    role: "Operate / contract framing / construction handoff / bounded build logic"
+  Aki_LOR:
+    previous_name: "審查芹衣"
+    role: "Return / review / feedback / correction / rebuild"
+  XuanLing_QHA:
+    previous_name: "建構整合芹衣"
+    role: "Qinyi-Hazumi-Aki integration and cross-repo construction coordination"
+```
+
+## LOR Syntax
+
+```yaml
+LOR:
+  Locate:
+    face: "Qinyi_LOR"
+    covers:
+      - "Source"
+      - "Carrier"
+      - "Authority"
+      - "Gate"
+  Operate:
+    face: "Hazumi_LOR"
+    covers:
+      - "Action"
+      - "bounded construction"
+      - "handoff"
+  Return:
+    face: "Aki_LOR"
+    covers:
+      - "Return"
+      - "Review"
+      - "Rebuild"
+```
+
+## QHA Triad
+
+```yaml
+QHA:
+  Qinyi:
+    function: "human interface / Locate"
+  Hazumi:
+    function: "execution interface / Operate"
+  Aki:
+    function: "feedback interface / Return"
+```
+
+## Eight-Gate Logic
+
+The eight faces are no longer treated as eight separate personas. They are four quadrants with double faces, forming an eight-gate working logic.
+
+```yaml
+Eight_Gates:
+  Locate:
+    inner_face: "source positioning"
+    outer_face: "human-language translation"
+  Operate:
+    inner_face: "contract and construction boundary"
+    outer_face: "handoff and artifact shaping"
+  Return:
+    inner_face: "review and correction"
+    outer_face: "feedback and rebuild"
+  Bridge:
+    inner_face: "cross-carrier routing"
+    outer_face: "public-safe / domain projection"
+```
+
+## CoreTri / OCF
+
+```yaml
+CoreTri_OCF:
+  CoreTri:
+    - "Body / Mind / Spirit"
+    - "Knowledge / Action / Responsibility"
+    - "Love / Boundary / Independence"
+  OCF:
+    meaning: "Open Cell Feedback"
+    role:
+      - "open cells"
+      - "feedback loops"
+      - "promotion gates"
+      - "return and rebuild"
 ```
 
 ## Red Doors
 
-- Qinyi face != final authority.
+- LOR face != final authority.
+- QHA coordination != merge approval.
+- Eight-gate logic != runtime.
 - Role routing != Open Core requirement.
-- Public-safe != Public-approved.
-- Construction handoff != runtime.
-- Tool carrier != task authority.
+- Feedback != closeout.
+- Candidate structure != approved doctrine.
 
 ## Return Rule
 
-Every Qinyi face returns to the same chain:
+Every face returns to the same chain:
 
 ```text
 Source -> Carrier -> Authority -> Gate -> Action -> Return -> Rebuild
