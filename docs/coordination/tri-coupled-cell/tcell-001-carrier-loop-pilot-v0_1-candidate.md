@@ -80,9 +80,10 @@ Value_Preservation_Return: Pending
 Architecture_Placement: Candidate
 Vitas_Bounded_Pilot_GO: Received
 Drive_Record: Created_Private_Write_Readback_Pass
-GitHub_Candidate_Write: In_Progress
+GitHub_Candidate_Write: Written_Readback_Pass
 Executor_ACK: Bounded_Scope_Accepted
-Independent_Readback: Pending
+Write_Readback: Pass
+Independent_Aki_Readback: Pending
 Fresh_Reconstruction_Test: Pending
 Rebuild: Not_Occurred
 Runtime: false
